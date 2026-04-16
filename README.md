@@ -58,13 +58,3 @@ Performance will improve with more data.
 
 ---Author
 Rahul-Gupta
-
-# 🌐 5. Create GitHub Repo
-
-## Step-by-step:
-
-```bash
-cd cataract-detection-ml
-git init
-git add .
-git commit -m "Initial commit - cataract detection ML model"
