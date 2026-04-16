@@ -15,14 +15,14 @@ model = models.mobilenet_v2(weights=None)
 model.classifier[1] = nn.Linear(model.last_channel, 1)
 
 # 3. LOAD TRAINED WEIGHTS
-model.load_state_dict(torch.load("D:/Rahul/rahul_work/Univisory/Kids/Nitya/Amey/ML_model/model/cataract_model.pth"))
+model.load_state_dict(torch.load("D:/ML_model/model/cataract_model.pth"))
 model.eval()
 
 # 4. CLASS NAMES
 classes = ['cataract', 'normal']
 
 # 5. TAKE FOLDER INPUT FROM USER
-folder_path = "D:/Rahul/rahul_work/Univisory/Kids/Nitya/Amey/ML_model/images_to_process"
+folder_path = "D:/ML_model/images_to_process"
 
 # 6. LOOP THROUGH IMAGES
 for file_name in os.listdir(folder_path):
